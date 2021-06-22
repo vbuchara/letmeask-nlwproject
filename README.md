@@ -7,7 +7,7 @@
 
 <h4 align="center">
   "Letmeask" is a open source Q&A app, made using React and Typescript in the Next Level Week Together event. 
-</h4><br>
+</h4>
 
 <div align="center">
 	<img alt="Letmeask image" src="src/assets/images/letmeask.png">
