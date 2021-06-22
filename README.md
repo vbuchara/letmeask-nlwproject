@@ -10,7 +10,7 @@
 </h4><br>
 
 <div align="center">
-	<img alt="Letmeask image" src="src/assets/images/letmeask.svg">
+	<img alt="Letmeask image" src="src/assets/images/letmeask.png">
 </div>
 
 # ℹ️ Description 
