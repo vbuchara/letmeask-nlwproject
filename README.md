@@ -32,7 +32,12 @@ This application has the standard scripts of a Create React App. To run it, use:
 
 ### `yarn start`
 
-<h2 align="center">
-  Made by Vinicius Buchara<br>
-  [![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white)](http://linkedin.com/in/vinicius-vieira-buchara)
-</h2>
+<h3 align="center">
+Made by Vinicius Buchara
+</h3>
+
+<div align="center">
+	
+[<img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="Linkedin Badge"/>](https://www.linkedin.com/in/vinicius-vieira-buchara/)
+	
+</div>
