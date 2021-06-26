@@ -15,8 +15,8 @@ import '../styles/auth.scss';
 
 export function Home(){
   const history = useHistory();
-  const { user, signInWithGoogle } = useContext(AuthContext);
-  const [ roomCode, setRoomCode] = useState('');
+  const { user, signInWithGoogle, signOutGoogle } = useContext(AuthContext);
+  const [ roomCode, setRoomCode ] = useState('');
 
   async function handleCreateRoom(){
     if(!user){
@@ -32,7 +32,7 @@ export function Home(){
     if(roomCode.trim() === ' '){
       return;
     }
-
+    
     const roomRef = await database.ref(`rooms/${roomCode}`).get();
 
     if(!roomRef.exists()){
@@ -58,10 +58,20 @@ export function Home(){
       <main>
         <div className="main-content">
           <img src={Logo} alt="Logo.svg"/>
-          <button onClick={handleCreateRoom} className="create-room">
-            <img src={GoogleImg} alt="google-icon.svg"/>
-            Crie sua sala com o Google.
-          </button>
+          { !user ? ( 
+              <button onClick={handleCreateRoom} className="create-room">
+                <img src={GoogleImg} alt="google-icon.svg"/>
+                Crie sua sala com o Google.
+              </button>
+            ) : (
+              <>
+                <Button onClick={handleCreateRoom} isOutlined homeButton>
+                  Criar uma Sala
+                </Button>
+                <button onClick={signOutGoogle}>Deslogar</button>
+              </>
+            )
+          }
           <div className="separator">ou entre em uma sala</div>
           <form onSubmit={handleJoinRoom}>
             <input

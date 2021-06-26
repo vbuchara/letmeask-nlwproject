@@ -21,3 +21,8 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+#deploy
+.firebaserc
+database.rules.json
+firebase.json

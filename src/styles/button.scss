@@ -24,6 +24,10 @@
     border: 1px solid #835afd;
     color: #835afd;
   }
+
+  &.homeButton{
+    margin-top: 64px;
+  }
   
   &:not(:disabled):hover{
     filter: brightness(0.9);
