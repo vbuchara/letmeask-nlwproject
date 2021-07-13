@@ -35,7 +35,7 @@ This project was developed using Typescript and SCSS, besides with Firebase Real
 
 # 📜 Scripts
 
-This application has the standard scripts of a Create React App. You can fork or clonet it, and run with:
+This application has the standard scripts of a Create React App. You can fork or clone it, and run with:
 
 ### `yarn start`
 
